@@ -8,9 +8,13 @@
 			dolore cupiditate. Molestias maiores commodi accusamus in quis voluptas aut, laudantium atque neque ex! Aut voluptate voluptas error ullam porro eos autem, deserunt
 			ratione praesentium ab, nam necessitatibus tempore eius enim quos ipsa nemo!
 		</p>
-
-		<IconAccessibility />
-		<IconAccountBox />
+		<h3>ICONS</h3>
+		<div class="icons">
+			<IconAccessibility />
+			<IconAccountBox />
+			<Gear />
+			<Bash />
+		</div>
 	</div>
 </template>
 
@@ -18,10 +22,24 @@
 <script>
 import IconAccessibility from '~icons/carbon/accessibility';
 import IconAccountBox from '~icons/mdi/account-box';
+import Gear from '~icons/codicon/gear';
+import Bash from '~icons/codicon/terminal-bash';
 export default {
 	components: {
 		IconAccessibility,
 		IconAccountBox,
+		Gear,
+		Bash,
 	},
 };
 </script>
+
+<style>
+.icons {
+	padding: 50px;
+	font-size: 3rem;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+</style>
